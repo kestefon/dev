@@ -365,31 +365,31 @@ def getRinterface_ext():
     rinterface_ext = Extension(
             name = pack_name + '.rinterface._rinterface',
             sources = [ \
-            #os.path.join('rpy2', 'rinterface', 'embeddedr.c'), 
-            #os.path.join('rpy2', 'rinterface', 'r_utils.c'),
-            #os.path.join('rpy2', 'rinterface', 'buffer.c'),
-            #os.path.join('rpy2', 'rinterface', 'sequence.c'),
-            #os.path.join('rpy2', 'rinterface', 'sexp.c'),
+            #os.path.join('rpy', 'rinterface', 'embeddedr.c'), 
+            #os.path.join('rpy', 'rinterface', 'r_utils.c'),
+            #os.path.join('rpy', 'rinterface', 'buffer.c'),
+            #os.path.join('rpy', 'rinterface', 'sequence.c'),
+            #os.path.join('rpy', 'rinterface', 'sexp.c'),
             os.path.join(package_prefix,
-                         'rpy2', 'rinterface', '_rinterface.c')
+                         'rpy', 'rinterface', '_rinterface.c')
                        ],
             depends = [os.path.join(package_prefix,
-                                    'rpy2', 'rinterface', 'embeddedr.h'), 
+                                    'rpy', 'rinterface', 'embeddedr.h'), 
                        os.path.join(package_prefix,
-                                    'rpy2', 'rinterface', 'r_utils.h'),
+                                    'rpy', 'rinterface', 'r_utils.h'),
                        os.path.join(package_prefix,
-                                    'rpy2', 'rinterface', 'buffer.h'),
+                                    'rpy', 'rinterface', 'buffer.h'),
                        os.path.join(package_prefix,
-                                    'rpy2', 'rinterface', 'sequence.h'),
+                                    'rpy', 'rinterface', 'sequence.h'),
                        os.path.join(package_prefix,
-                                    'rpy2', 'rinterface', 'sexp.h'),
+                                    'rpy', 'rinterface', 'sexp.h'),
                        os.path.join(package_prefix,
-                                    'rpy2', 'rinterface', '_rinterface.h'),
+                                    'rpy', 'rinterface', '_rinterface.h'),
                        os.path.join(package_prefix,
-                                    'rpy2', 'rinterface', 'rpy_device.h')
+                                    'rpy', 'rinterface', 'rpy_device.h')
                        ],
             include_dirs = [os.path.join(package_prefix,
-                                         'rpy2', 'rinterface'),] + include_dirs,
+                                         'rpy', 'rinterface'),] + include_dirs,
             libraries = ['R', ],
             library_dirs = r_libs,
             define_macros = define_macros,
@@ -402,10 +402,10 @@ def getRinterface_ext():
         pack_name + '.rinterface._rpy_device',
         [
             os.path.join(package_prefix,
-                         'rpy2', 'rinterface', '_rpy_device.c'),
+                         'rpy', 'rinterface', '_rpy_device.c'),
             ],
         include_dirs = include_dirs + 
-        [os.path.join('rpy2', 'rinterface'), ],
+        [os.path.join('rpy', 'rinterface'), ],
         libraries = ['R', ],
         library_dirs = r_libs,
         define_macros = define_macros,
@@ -421,7 +421,7 @@ if __name__ == '__main__':
     ri_ext = getRinterface_ext()
     rinterface_exts.append(ri_ext)
 
-    pack_dir = {pack_name: os.path.join(package_prefix, 'rpy2')}
+    pack_dir = {pack_name: os.path.join(package_prefix, 'rpy')}
 
     import distutils.command.install
     for scheme in distutils.command.install.INSTALL_SCHEMES.values():
