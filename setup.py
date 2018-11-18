@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(
-    name='StefonAppTest',
+    name='rpy2',
 	packages=['rpy2'],
 
 )
