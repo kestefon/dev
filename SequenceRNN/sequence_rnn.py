@@ -4,13 +4,24 @@ from keras.preprocessing.text import Tokenizer
 import functools
 import sets
 import tensorflow as tf
-##from tensorflow.models.rnn import rnn_cell
-##from tensorflow.models.rnn import rnn
-file='data.csv'
+import random
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
+from dash.dependencies import Input, Output
+
+from io import BytesIO
+import base64
+import pandas as pd
+import numpy as np
+
+raw=pd.read_csv('https://raw.githubusercontent.com/kestefon/dev/master/data.csv')
+
+#file='data.csv'
 
 # data I/O
-data = open(file, 'r').read() # should be simple plain text file
-data=pd.read_csv(file)
+#raw = open(file, 'r').read() # should be simple plain text file
+#raw =pd.read_csv(file)
 ##seq=data.iloc[:,[1]]
 ##seq=seq.Sequence.str.split(pat="-",expand=True)
 ####chars = list(set(data))
@@ -36,8 +47,8 @@ data=pd.read_csv(file)
 
 
 
-data_split=data.Sequence.str.split(pat="-",expand=True)
-data_final=pd.concat([data,data_split],axis=1)
+data_split=raw.Sequence.str.split(pat="-",expand=True)
+data_final=pd.concat([raw,data_split],axis=1)
 data_final.drop(columns=["Sequence"],inplace=True)
 data_final=pd.melt(data_final, id_vars=["User ID"])
 data_final.sort_values(["User ID", "variable"], inplace=True)
@@ -63,7 +74,9 @@ data_final['event']=data_final.event.apply(replaceNone)
 tk=Tokenizer()
 tk.fit_on_texts(data_final.event.values)
 word_index=tk.word_index
+word_index=word_index.copy()
 word_index.pop("none")
+
 
 enc=tk.texts_to_matrix(data_final.event.values,mode="binary")
 enc=pd.DataFrame(enc)
@@ -83,133 +96,164 @@ def checkDict(event, next_event, timestep):
     
 new_data.next_event.fillna("None",inplace=True)
 new_data['flag']= new_data.apply(lambda x: checkDict(x['event'],x['next_event'],x['timestep']),axis=1)
-
+new_data.drop(columns=[0,1],inplace=True)
 
 arr_x=[]
 arr_y=[]
 for name, group in new_data.groupby('user_id'):
     grp=np.array(group)
     #print("full group:\n", grp)
-    last=grp[grp[:,9]=="Last"]
+    last=grp[grp[:,8]=="Last"]
     #print("last:\n",last)
-    keep=grp[grp[:,9]!="Last"]
+    keep=grp[grp[:,8]!="Last"]
     #print("keep:\n",keep)
     arr_x.append(keep)
     arr_y.append(last)
 
-shape_ls=[]
-for i,arr in enumerate(arr_x):
-    shape_ls.append(arr.shape)
-
-t3d[t3d[:,:,9] == "Last"]
+##shape_ls=[]
+##for i,arr in enumerate(arr_x):
+##    shape_ls.append(arr.shape)
+##
+##t3d[t3d[:,:,9] == "Last"]
 
 data_x=np.stack(arr_x,axis=0)
-data_y=np.stack(arr_y,axis=0)
+data_x=data_x[:,:,3:7]
+data_x=data_x.astype(int)
 
+data_y=np.stack(arr_y,axis=0)
+data_y=data_y[:,:,3:7]
+data_y=data_y.astype(int)
 from sklearn.model_selection import train_test_split
 
-X_train, X_test, y_train, y_test = train_test_split(
-...     X, y, test_size=0.33, random_state=42)
-test=t3d[0]
-#test=np.delete(test,(1),axis=0)
-
-
-##def length(sequence):
-##  used = tf.sign(tf.reduce_max(tf.abs(sequence), 2))
-##  length = tf.reduce_sum(used, 1)
-##  length = tf.cast(length, tf.int32)
-##  return length
-##
-##def last_relevant(output, length):
-##  batch_size = tf.shape(output)[0]
-##  max_length = tf.shape(output)[1]
-##  out_size = int(output.get_shape()[2])
-##  index = tf.range(0, batch_size) * max_length + (length - 1)
-##  flat = tf.reshape(output, [-1, out_size])
-##  relevant = tf.gather(flat, index)
-##  return relevant
-##
-##def get_dataset():
-##    """Read dataset and flatten images."""
-##    dataset = sets.Ocr()
-##    dataset = sets.OneHot(dataset.target, depth=2)(dataset, columns=['target'])
-##    dataset['data'] = dataset.data.reshape(
-##        dataset.data.shape[:-2] + (-1,)).astype(float)
-##    train, test = sets.Split(0.66)(dataset)
-##    return train, test
-
-##    
-##new_arr=np.zeros((len(new_data.user_id.unique()),max(new_data.timestep)+1,8))
+X_train, X_test, y_train, y_test = train_test_split(data_x,data_y, test_size=0.33, random_state=42)
 
 
 
-##data_filtered=data_filtered.to_records()
-##new_dt = np.dtype(data_filtered.dtype.descr + [('enc0','i8'), ('enc1','i8'), ('enc2','i8'), ('enc3','i8'), ('enc4','i8')])
-##
-##
-##
-##tk=Tokenizer()
-##tk.fit_on_texts(data_filtered['event'])
-##data_matrix=tk.texts_to_matrix(data_filtered['event'],mode="binary")
-##word_index=tk.word_index
-##
-##new_data=np.zeros(data_filtered.shape, dtype=new_dt)
-##new_data['index'] = data_filtered['index']
-##new_data['user_id'] = data_filtered['user_id']
-##new_data['timestep'] = data_filtered['timestep']
-##new_data['event'] = data_filtered['event']
-##
-##new_data['enc0'] = data_matrix[:,0]
-##new_data['enc1'] = data_matrix[:,1]
-##new_data['enc2'] = data_matrix[:,2]
-##new_data['enc3'] = data_matrix[:,3]
-##new_data['enc4'] = data_matrix[:,4]
-###reshape into tensor
-##n_users=len(data_filtered.user_id.unique())
-##n_timestep=max(data_filtered.timestep)
+# Working example for my blog post at:
+# http://danijar.com/variable-sequence-lengths-in-tensorflow/
+import functools
+import sets
+import tensorflow as tf
+#from tensorflow.models.rnn import rnn_cell
+#from tensorflow.models.rnn import rnn
+
+
+def lazy_property(function):
+    attribute = '_' + function.__name__
+
+    @property
+    @functools.wraps(function)
+    def wrapper(self):
+        if not hasattr(self, attribute):
+            setattr(self, attribute, function(self))
+        return getattr(self, attribute)
+    return wrapper
+
+
+class VariableSequenceClassification:
+
+    def __init__(self, data, target, num_hidden=128, num_layers=3):
+        print("INITIALIZING")
+        self.data = data
+        self.target = target
+        self._num_hidden = num_hidden
+        self._num_layers = num_layers
+        self.prediction
+        self.error
+        self.optimize
+
+    @lazy_property
+    def length(self):
+        print("activating LENGTH function")
+        used = tf.sign(tf.reduce_max(tf.abs(self.data), reduction_indices=2))
+        length = tf.reduce_sum(used, reduction_indices=1)
+        length = tf.cast(length, tf.int32)
+        return length
+
+    @lazy_property
+    def prediction(self):
+        print("activating PREDICTION function")
+        # Recurrent network.
+        output, _ = tf.nn.dynamic_rnn(
+            tf.nn.rnn_cell.GRUCell(self._num_hidden),
+            data,
+            dtype=tf.float32,
+            sequence_length=self.length,
+        )
+        last = self._last_relevant(output, self.length)
+        # Softmax layer.
+        weight, bias = self._weight_and_bias(
+            self._num_hidden, int(self.target.get_shape()[1]))
+        prediction = tf.nn.softmax(tf.matmul(last, weight) + bias)
+        return prediction
+
+    @lazy_property
+    def cost(self):
+        print("activating COST function")
+        cross_entropy = -tf.reduce_sum(self.target * tf.log(self.prediction))
+        return cross_entropy
+
+    @lazy_property
+    def optimize(self):
+        print("activating OPTIMIZE function")
+        learning_rate = 0.001
+        optimizer = tf.train.RMSPropOptimizer(learning_rate)
+        print("activating optimizer function")
+        return optimizer.minimize(self.cost)
+
+    @lazy_property
+    def error(self):
+        print("activating ERROR function")
+        mistakes = tf.not_equal(
+            tf.argmax(self.target, 1), tf.argmax(self.prediction, 1))
+        return tf.reduce_mean(tf.cast(mistakes, tf.float32))
+
+    @staticmethod
+    def _weight_and_bias(in_size, out_size):
+        print("activating WEIGHT/BIAS function")
+        weight = tf.truncated_normal([in_size, out_size], stddev=0.01)
+        bias = tf.constant(0.1, shape=[out_size])
+        return tf.Variable(weight), tf.Variable(bias)
+
+    @staticmethod
+    def _last_relevant(output, length):
+        print("activating LAST RELEVANT function")
+        batch_size = tf.shape(output)[0]
+        max_length = int(output.get_shape()[1])
+        output_size = int(output.get_shape()[2])
+        index = tf.range(0, batch_size) * max_length + (length - 1)
+        flat = tf.reshape(output, [-1, output_size])
+        relevant = tf.gather(flat, index)
+        return relevant
+
+ 
+
+if __name__ == '__main__':
+    # We treat images as sequences of pixel rows.
+    _, rows, row_size = X_train.shape
+    num_classes = X_train.shape[2]
+    data = tf.placeholder(tf.float32, [None, rows, row_size])
+    target = tf.placeholder(tf.float32, [None, num_classes])
+    model = VariableSequenceClassification(data, target)
+    sess = tf.Session()
+    sess.run(tf.initialize_all_variables())
+    y_train=y_train.reshape((y_train.shape[0],y_train.shape[2]))
+    y_test=y_test.reshape((y_test.shape[0],y_test.shape[2]))
+    for epoch in range(100):      
+
+        for _ in range(50):
+            rand_idx=random.sample(range(0,X_train.shape[0]),10)
+            #print(rand_idx)
+            batch_data = X_train[rand_idx] #sample from data
+            #print("Batch data:\n", batch_data)
+            batch_target=y_train[rand_idx]
+            #print("Batch target:\n", batch_target)
+            
+            #print("starting SESS.RUN")
+            #print(batch_data.shape, batch_target.shape)
+            sess.run(model.optimize, {data: batch_data, target: batch_target})
+        error = sess.run(model.error, {data: X_test, target: y_test})
+        print('Epoch {:2d} error {:3.1f}%'.format(epoch + 1, 100 * error))
 ##
 
 
-
-### reshape 2D array
-##from numpy import array
-### list of data
-##data = [[11, 22],
-##		[33, 44],
-##		[55, 66]]
-### array of data
-##data = array(data)
-##print(data.shape)
-### reshape
-##data = data.reshape((data.shape[0], data.shape[1], 1))
-##print(data.shape)
-##
-##data_filtered.reset_index(level=0, inplace=True)
-
-##cols_exclude="Sequence"
-##[i for i in list(test_concat.columns) if i not in [cols_exclude]]
-
-##samples=["The cat sat on the mat.","The dog ate my homework."]
-##token_index={}
-##for sample in samples:
-##    for word in sample.split():
-##        if word not in token_index:
-##            token_index[word] = len(token_index) + 1
-##
-##
-##results = np.zeros(shape=(len(samples),
-##                          10,
-##                          max(token_index.values())+1))
-##
-##for i, sample in enumerate(samples):
-##    for j, word in list(enumerate(sample.split()))[:10]:
-##        index=token_index.get(word)
-##        results[i,j,index]=1
-##
-##
-##for i, sample in enumerate(samples):
-##    for j, word in list(enumerate(sample.split()))[:10]:
-##        index=token_index.get(word)
-##        print(i,sample,j,word)
-##        print("word:",word,"\nindex:",index)
-##        print("will update results[",i,j,index,"to be 1")
