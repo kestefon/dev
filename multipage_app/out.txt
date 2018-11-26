@@ -1,0 +1,3061 @@
+(404, 6, 4)
+INITIALIZING
+activating PREDICTION function
+activating LENGTH function
+activating LAST RELEVANT function
+activating WEIGHT/BIAS function
+activating ERROR function
+activating OPTIMIZE function
+activating optimizer function
+activating COST function
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch  1 error 65.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch  2 error 65.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch  3 error 64.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch  4 error 58.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch  5 error 59.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch  6 error 56.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch  7 error 57.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch  8 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch  9 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 10 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 11 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 12 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 13 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 14 error 48.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 15 error 48.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 16 error 48.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 17 error 47.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 18 error 47.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 19 error 47.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 20 error 48.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 21 error 47.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 22 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 23 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 24 error 48.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 25 error 48.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 26 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 27 error 49.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 28 error 49.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 29 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 30 error 49.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 31 error 49.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 32 error 49.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 33 error 49.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 34 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 35 error 49.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 36 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 37 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 38 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 39 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 40 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 41 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 42 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 43 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 44 error 48.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 45 error 48.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 46 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 47 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 48 error 48.5%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 49 error 48.0%
+0 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+1 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+2 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+3 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+4 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+5 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+6 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+7 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+8 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+9 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+10 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+11 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+12 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+13 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+14 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+15 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+16 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+17 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+18 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+19 10
+starting SESS.RUN
+Batch shapes: (10, 6, 4) (10, 4)
+Epoch 50 error 48.5%
+test

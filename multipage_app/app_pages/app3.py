@@ -17,13 +17,23 @@ layout = html.Div(className = "layout_container", children=[html.Div(
                   ]),
 
             html.Div(className="main-page", children=[
-                html.Div(className="main-container", children=["main container"]),
+                html.Div(id= "main-container-p3", className="main-container", children=["main container"]),
 
                 html.Div(className="box-grid-container", children=[
-                        html.Div(className="box box1", children=[dcc.Link('Go to Module 1', href='/page-1')]),
-                        html.Div(className="box box2", children=[dcc.Link('Go to Module 2', href='/page-2')]),
-                        html.Div(className="box box3", children=[dcc.Link('Go to Module 3', href='/page-3')]),
-                        html.Div(className="box box3", children=[dcc.Link('Go to HOME', href='/index')])
+                        html.Div(className="box box1", children=[
+                            html.H3(className="display-text", children=["Data Preview"]),
+                            dcc.Link('Go to Module 1', href='/page-1', className="link")]),
+                        html.Div(className="box box2", children=[
+                            html.H3(className="display-text", children=["Build Neural Net"]),
+                            dcc.Link('Go to Module 2', href='/page-2', className="link")]),
+
+                        html.Div(className="box box_home", children=[
+                            html.H3(className="display-text", children=["HOME"]),
+                            dcc.Link('Return to Home', href='/index', className="link")]),
+
+                        html.Div(className="box box3", children=[
+                            html.H3(className="display-text", children=["Evaluate Neural Net"]),
+                            dcc.Link('Go to Module 3', href='/page-3', className="link")])
                 ])
             ])
 
