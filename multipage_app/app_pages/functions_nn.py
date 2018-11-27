@@ -121,9 +121,21 @@ def fit_rnn(data_inputs, num_epochs=100, batch_size=50,
     sess.run(tf.initialize_all_variables())
     y_train = y_train.reshape((y_train.shape[0], y_train.shape[2]))
     y_test = y_test.reshape((y_test.shape[0], y_test.shape[2]))
-    rnn_history = ''
+
     list_results=[]
-    print("Printing results every 10 epochs:")
+    out_string='''
+            Generated {} tensors.
+            Dimensions of training data: {}
+            Dimensions of training target: {}
+            Dimensions of test data: {}
+            Dimensions of test target: {}
+            
+            Printing results every 10 epochs:
+            '''.format(len(data_inputs), data_inputs[0].shape,
+                                                    data_inputs[1].shape,
+                                                    data_inputs[2].shape, data_inputs[3].shape)
+
+    rnn_history = out_string
     for epoch in range(num_epochs):
 
         for _ in range(int(X_train.shape[0]/batch_size)+1):
@@ -144,12 +156,10 @@ def fit_rnn(data_inputs, num_epochs=100, batch_size=50,
         dict_error_train = {'datatype': 'train', 'epoch': epoch, 'error': error_train}
         list_results.append(dict_error_train)
 
-        line = '''
-        Test Error: Epoch {:2d} error {:3.1f}%
-        Training Error: Epoch {:2d} error {:3.1f}%
-        '''.format(epoch + 1, 100 * error, epoch + 1, 100 * error_train)
+        line = 'Test Error: Epoch {:2d} \n error {:3.1f}%\nTraining Error: ' \
+               'Epoch {:2d} error {:3.1f}%'.format(epoch + 1, 100 * error, epoch + 1, 100 * error_train)
 
-        rnn_history=rnn_history + line + '<BR>'
+        rnn_history=rnn_history + line + '\n'
 
         if (epoch + 1) % 10 ==0:
             print(line, sep="")
@@ -160,6 +170,6 @@ def fit_rnn(data_inputs, num_epochs=100, batch_size=50,
     out_plot = (ggplot(data=df_results) +
                 geom_point(mapping=aes(x="epoch", y="error", color="datatype")) +
                 xlab("Epoch") + ylab("Error") + labs(color="Data"))
-    print("Neural network training complete. Returning history and plot.")
-    return {'history_text': rnn_history, 'history_df': df_results, 'out_plot':out_plot}
+
+    return {'history_text': rnn_history, 'history_df': df_results, 'out_plot': out_plot}
 

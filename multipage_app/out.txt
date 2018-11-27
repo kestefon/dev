@@ -1,0 +1,43 @@
+Running model...
+(404, 6, 4)
+INITIALIZING
+1 32 lstm
+2 32 gru
+activating PREDICTION function
+activating LENGTH function
+activating LAST RELEVANT function
+activating WEIGHT/BIAS function
+activating ERROR function
+activating OPTIMIZE function
+activating optimizer function
+activating COST function
+Test Error: Epoch 10 
+ error 57.5%
+Training Error: Epoch 10 error 52.5%
+Test Error: Epoch 20 
+ error 48.0%
+Training Error: Epoch 20 error 46.5%
+Test Error: Epoch 30 
+ error 48.5%
+Training Error: Epoch 30 error 45.5%
+Test Error: Epoch 40 
+ error 49.5%
+Training Error: Epoch 40 error 44.6%
+Test Error: Epoch 50 
+ error 49.0%
+Training Error: Epoch 50 error 44.1%
+Test Error: Epoch 60 
+ error 49.5%
+Training Error: Epoch 60 error 43.8%
+Test Error: Epoch 70 
+ error 51.0%
+Training Error: Epoch 70 error 43.3%
+Test Error: Epoch 80 
+ error 47.5%
+Training Error: Epoch 80 error 43.8%
+Test Error: Epoch 90 
+ error 49.0%
+Training Error: Epoch 90 error 43.1%
+Test Error: Epoch 100 
+ error 50.0%
+Training Error: Epoch 100 error 42.6%

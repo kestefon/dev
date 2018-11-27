@@ -61,9 +61,9 @@ def create_html_template(content):
 
 def page_item(content, make_id=None):
     if make_id is None:
-        page_item = html.Div(className="page-item", children=[content])
+        page_item = html.Div(className="page-item", children=content)
     else:
-        page_item = html.Div(id=make_id, className="page-item", children=[content])
+        page_item = html.Div(id=make_id, className="page-item", children=content)
     return page_item
 
 def page_group(*args):

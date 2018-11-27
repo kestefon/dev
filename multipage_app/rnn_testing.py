@@ -19,15 +19,24 @@ data_list_temp = ()
 data_list_temp = fnn.generate_arrays(fnn.data_cleanup(raw))
 
 #rnn_outputs = fnn.fit_rnn(data_list_temp[0], data_list_temp[1], data_list_temp[2], data_list_temp[3])
+
+
+l1={'layer':1, 'type': 'lstm', 'n_hidden':32}
+l2={'layer':2, 'type': 'gru', 'n_hidden':32}
+layer_list=[]
+layer_list.append(l1)
+layer_list.append(l2)
+
 rnn_outputs=fnn.fit_rnn(data_inputs=data_list_temp,
-                        num_epochs=150, batch_size=25, learning_rate=0.003, n_layers=3, hidden_units=128)
+                        num_epochs=100, batch_size=25, learning_rate=0.003, layers=layer_list)
+
 #returns rnn_history, df_results)
 
 ##df=rnn_outputs["history_df"]
 ##
-##out_plot = (ggplot(data=df) +
-##                geom_point( mapping=aes(x="epoch", y="error", color="datatype") ) +
-##            xlab("Epoch") + ylab("Error") + labs(color="Data"))
+out_plot = (ggplot(data=df) +
+                geom_point( mapping=aes(x="epoch", y="error", color="datatype") ) +
+            xlab("Epoch") + ylab("Error") + labs(color="Data"))
 ##
 ##l1={'layer':1, 'type': 'gru', 'n_hidden':128}
 ##l2={'layer':2, 'type': 'gru', 'n_hidden':128}

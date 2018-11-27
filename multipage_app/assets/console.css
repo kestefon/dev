@@ -29,64 +29,42 @@
     margin-left: 20px;
 }
 
-/*
-.header-container{
-    display: flex;
-    color: #5995DA;
-    background-color: #D6E9FE;
-    justify-content: center;
-}
-
-.header {
-    width: 900px;
-    height: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}*/
 
 .layout_container{
     display: block;
-    height: 700px;
-    background-color: #FFFFFF;
-
+    height: auto;
+    border: 2px solid #ff00ff; /*purple*/
+  /*  height: 700px;*/
+    /*background-color: #FFFFFF;*/
 }
 
 .main-page {
     display: flex;
     justify-content: center;
-    background-color: #FFFFFF;
-    height:600px;
+    border: 2px solid #00ffff; /*turqoise*/
 
-}
-
-
-
-
-.main-container {
-    display: flex;
-    justify-content: center;
-    background-color: #F09A9D;
-    width: 60%;
 }
 
 
 /*
-#main-container-p1 {
-    background-image:
-        url('photo_computer.jpg'),
-        linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6));
-    background-size:cover;
+.main-container {
+    display: flex;
+    justify-content: center;
+    */
+/*background-color: #F09A9D;*//*
+
+    width: 60%;
 }
 */
+
+
 
 #main-container-home {
   background:
     /* top, transparent white gradient */
     linear-gradient(
-      rgba(0,0,0, 0.7),
-      rgba(0,0,0, 0.7)
+      rgba(0,0,0, .5),
+      rgba(0,0,0, .5)
     ),
     /* bottom, image */
     url('photo_work.jpg');
@@ -108,39 +86,55 @@
     color: white;
 }
 
-
+/*left-hand panel of page: p2-content box is redundant */
 #main-container-p2 {
   background:
     /* top, transparent white gradient */
     linear-gradient(
-      rgba(0,0,0, 0.9),
-      rgba(0,0,0, 0.9)
+      rgba(0,0,0, 0.5),
+      rgba(0,0,0, 0.5)
     ),
     /* bottom, image */
     url('photo_robot.jpg');
     background-size: cover;
     color: white;
-}
-
-
-#p2-content-box{
+    flex: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    border: 2px solid #0000ff;
+
 
 }
 
-.page-item {
-  /*border: 1px solid #fff;*/
+
+
+#slider-unit {
+  border: 1px solid #ffff00;
   width: 500px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
+  flex-direction: row;
+}
+
+.slider-item {
+    border: 1px solid #ff0000;
+    height: 200px;
 
 }
 
+#p2-button-buttonId {
+    background-color: white;
+}
+
+
+/*
+.page-item {
+  border: 1px solid #fff;
+  width: 50%;
+  margin: 5px;
+
+}
+*/
 
 
 #main-container-p3 {
@@ -174,12 +168,6 @@
     align-items: flex-end;
     justify-content: flex-end;
 }
-
-
-
-
-
-
 
 
 
