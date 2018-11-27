@@ -99,8 +99,7 @@ def update_table(jsonified_cleaned_data):
 @app.callback(Output(component_id = 'p2-slider-outputDivId-show', component_property= 'children'),
               [Input('p2-slider-sliderId', 'value')])
 def slider_output_show(value):
-    return "Train: {} %".format(100-value) + "Test: {}%".format(value)
-
+    return "Train: {}% ".format(100-value) + "Test: {}%".format(value)
 
 @app.callback(Output(component_id = 'p2-slider-outputDivId-hide', component_property= 'children'),
               [Input('p2-slider-sliderId', 'value')])

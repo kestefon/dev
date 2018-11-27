@@ -1,7 +1,3 @@
-#p2-console-out {
-    font-family: "Lucida Console", Monaco, monospace;
-    font-size: 12px;
-}
 
 * {
     margin: 0;
@@ -33,7 +29,7 @@
     margin-left: 20px;
 }
 
-
+/*
 .header-container{
     display: flex;
     color: #5995DA;
@@ -48,7 +44,7 @@
     justify-content: space-between;
     align-items: center;
 
-}
+}*/
 
 .layout_container{
     display: block;
@@ -93,9 +89,9 @@
       rgba(0,0,0, 0.7)
     ),
     /* bottom, image */
-    url('photo_computer.jpg');
+    url('photo_work.jpg');
     background-size: cover;
-    color: white;
+    /*color: white;*/
 }
 
 
@@ -103,38 +99,59 @@
   background:
     /* top, transparent white gradient */
     linear-gradient(
-      rgba(0,0,0, 0.7),
-      rgba(0,0,0, 0.7)
+      rgba(0,0,0, .9),
+      rgba(0,0,0, .9)
     ),
     /* bottom, image */
-    url('photo_work.jpg');
+    url('photo_laptop.jpg');
     background-size: cover;
     color: white;
 }
+
 
 #main-container-p2 {
   background:
     /* top, transparent white gradient */
     linear-gradient(
-      rgba(0,0,0, 0.7),
-      rgba(0,0,0, 0.7)
+      rgba(0,0,0, 0.9),
+      rgba(0,0,0, 0.9)
     ),
     /* bottom, image */
-    url('photo_work.jpg');
+    url('photo_robot.jpg');
     background-size: cover;
     color: white;
 }
+
+
+#p2-content-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.page-item {
+  /*border: 1px solid #fff;*/
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+}
+
 
 
 #main-container-p3 {
   background:
     /* top, transparent white gradient */
     linear-gradient(
-      rgba(0,0,0, 0.7),
-      rgba(0,0,0, 0.7)
+      rgba(0,0,0, 0.9),
+      rgba(0,0,0, 0.9)
     ),
     /* bottom, image */
-    url('photo_work.jpg');
+    url('photo_neuralnet.jpeg');
     background-size: cover;
     color: white;
 }
@@ -158,73 +175,81 @@
     justify-content: flex-end;
 }
 
-/*.box1 {
-    background-color: #F09A9D;
-}*/
+
+
+
+
+
+
+
+
+.box {
+
+    border: 1px solid #ccc;
+    display: flex;
+    width: 225px;
+    height: 225px;
+    margin:2px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: white;
+/*    background:
+        linear-gradient(
+         rgba(178,214,255, .6),
+         rgba(178,214,255, .6)
+        ),
+         url('photo_work.jpg');
+    background-size: cover;*/
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
 
 .box_home{
-    background-color: #C8C6FA;
+    background:
+        linear-gradient(
+        rgba(154,151,246, .7),
+        rgba(154,151,246, .9)
+        );
+
 }
-
-/*
-.box_home {
-  background:
-    */
-/* top, transparent white gradient *//*
-
-    linear-gradient(
-      rgba(255,255,255, 0.2),
-      rgba(255,255,255, 0.2)
-    ),
-    */
-/* bottom, image *//*
-
-    url('photo_work.jpg');
-    background-size: cover;
-    color: white;
-}
-*/
 
 .box1 {
   background:
-    /* top, transparent white gradient */
     linear-gradient(
-      rgba(240,154,157, .5),
-      rgba(240,154,157, .5)
+      rgba(240,154,157, .6),
+      rgba(240,154,157, .6)
     ),
-    /* bottom, image */
-    url('photo_work.jpg');
+    url('photo_laptop.jpg');
     background-size: cover;
     color: white;
 }
-
-
 
 .box2 {
   background:
-    /* top, transparent white gradient */
+/* top, transparent white gradient */
+
     linear-gradient(
-      rgba(178,214,255, 1),
-      rgba(178,214,255, 1)
+      rgba(178,214,255, .6),
+      rgba(178,214,255, .6)
     ),
-    /* bottom, image */
-    url('photo_computer.jpg');
+
+
+    url('photo_robot.jpg');
     background-size: cover;
-    color: white;
 }
-
-
 
 
 .box3 {
   background:
-    /* top, transparent white gradient */
+
     linear-gradient(
-      rgba(245,207,142, 1),
-      rgba(245,207,142, 1)
+      rgba(245,207,142, .6),
+      rgba(245,207,142, .6)
     ),
-    /* bottom, image */
-    url('photo_computer.jpg');
+
+    url('photo_neuralnet.jpeg');
     background-size: cover;
     color: white;
 }
@@ -238,8 +263,32 @@
     margin: 10px;
 }
 
+/*
+
+.box:hover link {
+  color: black;
+}
+
+
+@keyframes up-bump {
+  0% { padding-top: 2em; }
+  50% { padding-top: 1.5em; }
+  100% { padding-top: 2em; }
+}
+@keyframes down-bump {
+  0% { padding-top: 2em; }
+  50% { padding-top: 2.5em; }
+  100% { padding-top: 2em; }
+}
+
+
+
+
+
+*/
+
 .display-text{
-    color: white;
+    /*color: white;*/
     margin: 10px;
 
 }
