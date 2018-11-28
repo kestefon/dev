@@ -7,55 +7,33 @@ from keras.preprocessing.text import Tokenizer
 
 
 
-def create_html_template(content):
+def create_html_template(content, outer_div_id=None):
     master_layout = \
-        html.Div(className = "layout_container",
-            children=[html.Div(className='menu-container',
-                children=[html.Div(className="menu",
-                    children=[
-                        html.Div(className="date", children=["Aug 14, 2016"]),
-                        html.Div(className="links",
-                                 children=[
-                                    html.Div(className="signup",children=["Sign Up"]),
-                                    html.Div(className="login",children=["Login"])
-                                          ])
-                            ])
-                         ]),
-
-            html.Div(className="main-page", children=[content,
-
-                html.Div(className="box-grid-container", children=[
-                    html.Div(className = "overlay-container", children = [
-                        html.Div(className="box box1", children=[
-                            html.H3(className="display-text", children=["Data Preview"]),
-                            dcc.Link('Go to Module 1', href='/page-1', className="link")
-                        ])
+        html.Div(className = "outer-div", id=outer_div_id, children=[
+            html.Div(className="left-div", children=[content]),
+            html.Div(className="right-div", children=[
+                html.Div(className="box-container", children=[
+                    html.Div(className="box box1", children=[
+                        html.H3(className="display-text", children=["Sequence Data Preview"]),
+                        dcc.Link('Go to Module 1', href='/page-1', className="link")
+                    ]),
+                    html.Div(className="box box2", children=[
+                        html.H3(className="display-text", children=["Train Neural Network"]),
+                        dcc.Link('Go to Module 2', href='/page-2', className="link")
 
                     ]),
-                html.Div(className="overlay-container", children=[
-                        html.Div(className="box box2", children=[
-                            html.H3(className="display-text", children=["Build Neural Net"]),
-                            dcc.Link('Go to Module 2', href='/page-2', className="link")
-                        ])
-                        ]),
-                html.Div(className="overlay-container", children=[
-                        html.Div(className="box box3", children=[
-                            html.H3(className="display-text", children=["Evaluate Neural Net"]),
-                            dcc.Link('Go to Module 3', href='/page-3', className="link")
-                        ])
-                        ]),
-                html.Div(className="overlay-container", children=[
-                        html.Div(className="box box_home", children=[
-                            html.H3(className="display-text", children=["HOME"]),
-                            dcc.Link('Return to Home', href='/index', className="link")
-                        ])
-                        ])
-
-
+                    # html.Div(className="box boxnone", children=[
+                    #
+                    # ]),
+                    html.Div(className="box boxhome", children=[
+                        html.H3(className="display-text", children=["Home"]),
+                        dcc.Link('Return to Intro', href='/index', className="link")
+                    ])
                 ])
             ])
 
-])
+
+        ])
     return master_layout
 
 
@@ -66,9 +44,6 @@ def page_item(content, make_id=None):
         page_item = html.Div(id=make_id, className="page-item", children=content)
     return page_item
 
-def page_group(*args):
-    page_group = html.Div(className="page-group", children=[args])
-    return page_group
 
 def page_title(content):
     page_title = html.Div(className="page-title", children=[content])

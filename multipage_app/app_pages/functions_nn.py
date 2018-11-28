@@ -156,8 +156,8 @@ def fit_rnn(data_inputs, num_epochs=100, batch_size=50,
         dict_error_train = {'datatype': 'train', 'epoch': epoch, 'error': error_train}
         list_results.append(dict_error_train)
 
-        line = 'Test Error: Epoch {:2d} \n error {:3.1f}%\nTraining Error: ' \
-               'Epoch {:2d} error {:3.1f}%'.format(epoch + 1, 100 * error, epoch + 1, 100 * error_train)
+        line = 'Test Error: Epoch {:2d} yielded error {:3.1f}%\nTraining Error: ' \
+               'Epoch {:2d} yielded error {:3.1f}%'.format(epoch + 1, 100 * error, epoch + 1, 100 * error_train)
 
         rnn_history=rnn_history + line + '\n'
 

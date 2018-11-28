@@ -32,11 +32,14 @@ rnn_outputs=fnn.fit_rnn(data_inputs=data_list_temp,
 
 #returns rnn_history, df_results)
 
-##df=rnn_outputs["history_df"]
+df=rnn_outputs["history_df"]
+df.head()
+####
+##out_plot = (ggplot(data=df) +
+##                geom_point( mapping=aes(x="epoch", y="error", color="datatype") ) +
+##            xlab("Epoch") + ylab("Error") + labs(color="Data"))
 ##
-out_plot = (ggplot(data=df) +
-                geom_point( mapping=aes(x="epoch", y="error", color="datatype") ) +
-            xlab("Epoch") + ylab("Error") + labs(color="Data"))
+
 ##
 ##l1={'layer':1, 'type': 'gru', 'n_hidden':128}
 ##l2={'layer':2, 'type': 'gru', 'n_hidden':128}

@@ -9,7 +9,7 @@ import sys
 
 #functions for front-end of dashboard
 
-def create_table(dataframe, max_rows=5):
+def create_table(dataframe, max_rows=7):
     return html.Table(
         # Header
         [html.Tr([html.Th(col) for col in dataframe.columns])] +

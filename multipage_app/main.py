@@ -8,7 +8,7 @@ from keras.preprocessing.text import Tokenizer
 import sys
 
 import flask
-from app_pages import app1, app2, app3, index
+from app_pages import app1, app2, index, collapse
 from app_pages import functions_nn as fnn
 from app_pages import functions_frontend as fnf
 from app_pages import rnn_sequence
@@ -17,6 +17,7 @@ from plotnine import *
 from io import BytesIO
 import base64
 import os
+import plotly.graph_objs as go
 
 
 #os.remove('out.txt')
@@ -29,6 +30,7 @@ f.close()
 
 #CSS
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
 
 #Generate app and server
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
@@ -51,8 +53,7 @@ def serve_layout():
         url_bar_and_content_div,
         index.layout,
         app1.layout,
-        app2.layout,
-        app3.layout,
+        app2.layout
     ])
 
 
@@ -63,18 +64,14 @@ app.layout = serve_layout
 
 #GENERAL FUNCTIONS
 
-def run_model():
+def gen_layer_list(inputs=[{'layer': 1, 'type': 'lstm', 'n_hidden': 32}]):
     l1 = {'layer': 1, 'type': 'lstm', 'n_hidden': 32}
     l2 = {'layer': 2, 'type': 'gru', 'n_hidden': 32}
     layer_list = []
     layer_list.append(l1)
     layer_list.append(l2)
+    return layer_list
 
-    data_list_temp = fnn.generate_arrays(fnn.data_cleanup(raw))
-
-    rnn_outputs = fnn.fit_rnn(data_inputs=data_list_temp,
-                              num_epochs=100, batch_size=25, learning_rate=0.003, layers=layer_list)
-    return rnn_outputs
 
 def fig_to_uri(in_fig, close_all=True, **save_args):
     # type: (plt.Figure) -> str
@@ -98,8 +95,6 @@ def display_page(pathname):
         return app1.layout
     elif pathname == "/page-2":
         return app2.layout
-    elif pathname == "/page-3":
-        return app3.layout
     elif pathname == "/index":
         return index.layout
     else:
@@ -107,13 +102,14 @@ def display_page(pathname):
 
 
 #Page 1 Callbacks
-@app.callback(Output('p1-output-state', 'children'),
-              [Input('p1-submit-button', 'n_clicks')],
-               [State('p1-id-dropdown-data', 'value')])
-def update_p1_output(n_clicks, dropdown_value):
-    return dropdown_value
+# @app.callback(Output('p1-output-state', 'children'),
+#               # [Input('p1-submit-button', 'n_clicks')],
+#                [Input('p1-id-dropdown-data', 'value')]
+#               )
+# def update_p1_output(dropdown_value):
+#     return dropdown_value
 
-@app.callback(Output('p1-intermediate-value', 'children'), [Input('p1-output-state', 'children')])
+@app.callback(Output('p1-intermediate-value', 'children'), [Input('p1-id-dropdown-data', 'value')])
 def clean_data(value):
 
      if value == "RAW":
@@ -136,15 +132,29 @@ def update_table(jsonified_cleaned_data):
 
 #PAGE 2 CALLBACKS Generate arrays & Test/Train split
 
-@app.callback(Output(component_id = 'p2-slider-outputDivId-show', component_property= 'children'),
+@app.callback(Output(component_id = 'p2-testtrain-show', component_property= 'children'),
               [Input('p2-slider-sliderId', 'value')])
 def slider_output_show(value):
-    return "Train: {}% ".format(100-value) + "Test: {}%".format(value)
+    return "Train Dataset: {}% ".format(100-value) + "Test Dataset: {}%".format(value)
 
 @app.callback(Output(component_id = 'p2-slider-outputDivId-hide', component_property= 'children'),
               [Input('p2-slider-sliderId', 'value')])
 def slider_output_hide(value):
     return value
+
+
+
+@app.callback(Output(component_id = 'p2-epoch-show', component_property= 'children'),
+              [Input('p2-epoch-slider', 'value')])
+def slider_output_show(value):
+    return html.Div([html.P("Model will run for "), html.Span("{}".format(value)),
+                            html.P("epochs. Results will be displayed in plot below.")])
+
+@app.callback(Output(component_id = 'p2-epoch-hide', component_property= 'children'),
+              [Input('p2-epoch-slider', 'value')])
+def slider_output_hide(value):
+    return value
+
 
 #COMPONENTS OF PAGE
 #Slider
@@ -154,40 +164,89 @@ def slider_output_hide(value):
 
 
 
-@app.callback(Output('p2-button-outputDivId-hide', 'children'),
-              [Input('p2-button-buttonId', 'n_clicks')])
-def click_generate(n_clicks, value="OFF"):
-    if n_clicks is None:
-        return "OFF"
-    elif n_clicks > 0:
-        return "GEN"
+def df_to_plotly(df):
+    test_set = df['datatype'] == 'test'
+    df_test = df[test_set]
+    df_train = df[~test_set]
+
+    x_epoch = df.epoch.unique()
+
+    trace_test = go.Scatter(
+        x=x_epoch,
+        y=df_test['error'],
+        name="Test Loss",
+        line=dict(color='#17BECF'),
+        opacity=0.8)
+
+    trace_train = go.Scatter(
+        x=x_epoch,
+        y=df_train['error'],
+        name="Train Loss",
+        line=dict(color='#7F7F7F'),
+        opacity=0.8)
+
+    data = [trace_test, trace_train]
+    return {
+        'data': data
+    }
+
+
+@app.callback(Output('cur_plot', 'figure'),
+              [Input('p2-button-buttonId', 'n_clicks')],
+               [State('p2-slider-sliderId', 'value'),
+                State('choose_cell-1', 'value'),
+                State('choose_cell-2', 'value'),
+                State('choose_cell-3', 'value'),
+                State('choose_cell-4', 'value'),
+                State('layer-value-1', 'value'),
+                State('layer-value-2', 'value'),
+                State('layer-value-3', 'value'),
+                State('layer-value-4', 'value'),
+                State('p2-epoch-hide', 'value')
+                ])
+
+def update_plot(n_clicks, test_percent, cell1=None,cell2=None,cell3=None,cell4=None,
+                layer1=None,layer2=None,layer3=None,layer4=None, n_epochs=None):
+
+    if n_epochs is None:
+        n_ep=100
     else:
-        return "OFF"
+        n_ep=n_epochs
+
+    layer_list = []
+    l1 = {'layer': 1, 'type': 'lstm', 'n_hidden': 32}
+    layer_list.append(l1)
+
+    l2 = {'layer': 2, 'type': 'gru', 'n_hidden': 32}
+    layer_list.append(l2)
+
+    l3 = {'layer': 3, 'type': 'gru', 'n_hidden': 32}
+    layer_list.append(l3)
+
+    l4 = {'layer': 4, 'type': 'gru', 'n_hidden': 32}
+    layer_list.append(l4)
 
 
-
-@app.callback(Output('cur_plot', 'src'),
-              [Input("p2-button-outputDivId-hide", 'children')])
-
-def update_plot(input):
-
-    if input == "GEN":
+    if n_clicks % 2 == 1:
         orig_stdout = sys.stdout
         f = open('out.txt', 'a')
         sys.stdout = f
         print("Running model...")
-        model=run_model()
-        out_plot = (ggplot(data=model['history_df']) +
-                    geom_point(mapping=aes(x="epoch", y="error", color="datatype")) +
-                    xlab("Epoch") + ylab("Error") + labs(color="Data"))
+
+        data_list_temp = fnn.generate_arrays(fnn.data_cleanup(raw), var_test_percent=int(test_percent)/100)
+
+        model = fnn.fit_rnn(data_inputs=data_list_temp,
+                                  num_epochs=int(n_ep), batch_size=25, learning_rate=0.003, layers=layer_list)
+        # out_plot = (ggplot(data=model['history_df']) +
+        #             geom_point(mapping=aes(x="epoch", y="error", color="datatype")) +
+        #             xlab("Epoch") + ylab("Error") + labs(color="Data"))
         sys.stdout = orig_stdout
         f.close()
-
-        return fig_to_uri(out_plot)
+        return df_to_plotly(model['history_df'])
 
 
 @app.callback(dash.dependencies.Output('console-out',
-'children'),
+'srcDoc'),
     [dash.dependencies.Input('interval2', 'n_intervals')])
 def update_output(n):
     data = ''
@@ -198,10 +257,20 @@ def update_output(n):
     else:
         last_lines = lines[-5:]
     for line in last_lines:
-        data=data+line + '\n'
+        data=data+line + '<BR>'
     file.close()
     return data
 
+
+@app.callback(
+    dash.dependencies.Output('button_container', 'style'),
+    [dash.dependencies.Input('button', 'n_clicks')],
+    )
+def button_toggle(n_clicks):
+    if n_clicks % 2 == 1:
+        return {'display': 'none'}
+    else:
+        return {'display': 'block'}
 
 
 

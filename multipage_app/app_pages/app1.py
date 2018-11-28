@@ -11,22 +11,30 @@ from .templates import master_template as tp
 
 p1_content = html.Div(id="main-container-p1", className="main-container", children=[
                                             html.Div([
-                                                html.H3(children="Page 1: Data Preview"),
+                                                html.H3(children="Module 1: Sequence Data Preview"),
+                                                html.P(["The table below provides a preview of the data that will"
+                                                        "feed into the model. This is anonymized user-level data"
+                                                        "that shows us the sequence in which they clicked ads."]),
+                                                html.Hr(),
                                                 dcc.Dropdown(id='p1-id-dropdown-data',
                                                     options=[
-                                                        {'label': 'Raw Data', 'value': 'RAW'},
-                                                        {'label': u'Cleaned Data', 'value': 'CLEAN'}
+                                                        {'label': 'Click Sequence Data', 'value': 'RAW'},
+                                                        {'label': u'Transposed Data for Model', 'value': 'CLEAN'}
                                                     ],
-                                                    value='RAW'
+                                                    value='RAW',
+                                                             style = {
+                                                                 'color': 'black'
+                                                             }
                                                 ),
-                                                html.Button(id='p1-submit-button', n_clicks=0, children='Submit'),
+
+                                                # html.Button(id='p1-submit-button', n_clicks=0, children='Submit'),
                                                 html.Div(id='p1-intermediate-value', style={'display': 'none'}),
                                                 html.Div(id='p1-output-state', style={'display': 'none'}),
-                                                html.H4(children='Data Preview'),
+
                                                 html.Table(id='p1-table'),
                                                 html.H1(id='p1-div-out', children='')
 
                                             ])
                                                                ])
 
-layout = tp.create_html_template(p1_content)
+layout = tp.create_html_template(p1_content, "outer-div-p1")
