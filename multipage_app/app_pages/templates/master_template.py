@@ -4,7 +4,9 @@ from dash.dependencies import Input, Output
 import pandas as pd
 import numpy as np
 from keras.preprocessing.text import Tokenizer
-
+import plotly.graph_objs as go
+import plotly.plotly as py
+import plotly.graph_objs as go
 
 
 def create_html_template(content, outer_div_id=None):
@@ -13,11 +15,11 @@ def create_html_template(content, outer_div_id=None):
             html.Div(className="left-div", children=[content]),
             html.Div(className="right-div", children=[
                 html.Div(className="box-container", children=[
-                    html.Div(className="box box1", children=[
+                    html.Div(className="box box1 hvr-shrink", children=[
                         html.H3(className="display-text", children=["Sequence Data Preview"]),
                         dcc.Link('Go to Module 1', href='/page-1', className="link")
                     ]),
-                    html.Div(className="box box2", children=[
+                    html.Div(className="box box2 hvr-shrink", children=[
                         html.H3(className="display-text", children=["Train Neural Network"]),
                         dcc.Link('Go to Module 2', href='/page-2', className="link")
 
@@ -25,7 +27,7 @@ def create_html_template(content, outer_div_id=None):
                     # html.Div(className="box boxnone", children=[
                     #
                     # ]),
-                    html.Div(className="box boxhome", children=[
+                    html.Div(className="box boxhome hvr-shrink", children=[
                         html.H3(className="display-text", children=["Home"]),
                         dcc.Link('Return to Intro', href='/index', className="link")
                     ])

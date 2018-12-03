@@ -1,63 +1,65 @@
 import dash
+from dash.dependencies import Input, Output, Event
 import dash_core_components as dcc
 import dash_html_components as html
-from dash.dependencies import Input, Output, State
-import pandas as pd
-import numpy as np
-from keras.preprocessing.text import Tokenizer
-import sys
 
-import flask
+import datetime
+import time
 
+class Semaphore:
+    def __init__(self, filename='semaphore.txt'):
+        self.filename = filename
+        with open(self.filename, 'w') as f:
+            f.write('done')
 
-from plotnine import *
-from io import BytesIO
-import base64
-import os
-import plotly.graph_objs as go
+    def lock(self):
+        with open(self.filename, 'w') as f:
+            f.write('working')
 
+    def unlock(self):
+        with open(self.filename, 'w') as f:
+            f.write('done')
 
+    def is_locked(self):
+        return open(self.filename, 'r').read() == 'working'
 
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+semaphore = Semaphore()
 
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+def long_process():
+    if semaphore.is_locked():
+        raise Exception('Resource is locked')
+    semaphore.lock()
+    time.sleep(7)
+    semaphore.unlock()
+    return datetime.datetime.now()
 
-colors = {
-    'background': '#111111',
-    'text': '#7FDBFF'
-}
+app = dash.Dash()
 
-app.layout = html.Div(style={'backgroundColor': colors['background']}, children=[
-    html.H1(
-        children='Hello Dash',
-        style={
-            'textAlign': 'center',
-            'color': colors['text']
-        }
-    ),
+def layout():
+    return html.Div([
+        html.Button('Run Process', id='button'),
+        dcc.Interval(id='interval', interval=500),
+        dcc.RadioItems(
+            id='lock',
+            options=[{'label': i, 'value': i} for i in ['Running...', 'Free']]),
+        html.Div(id='output')
+    ])
 
-    html.Div(children='Dash: A web application framework for Python.', style={
-        'textAlign': 'center',
-        'color': colors['text']
-    }),
+app.layout = layout
 
-    dcc.Graph(
-        id='example-graph-2',
-        figure={
-            'data': [
-                {'x': [1, 2, 3], 'y': [4, 1, 2], 'type': 'bar', 'name': 'SF'},
-                {'x': [1, 2, 3], 'y': [2, 4, 5], 'type': 'bar', 'name': u'Montréal'},
-            ],
-            'layout': {
-                'plot_bgcolor': colors['background'],
-                'paper_bgcolor': colors['background'],
-                'font': {
-                    'color': colors['text']
-                }
-            }
-        }
-    )
-])
+@app.callback(
+    Output('lock', 'value'),
+    events=[Event('interval', 'interval')])
+def display_status():
+    return 'Running...' if semaphore.is_locked() else 'Free'
+
+@app.callback(
+    Output('output', 'children'),
+    events=[Event('button', 'click')])
+def run_process():
+    return 'Finished at {}'.format(long_process())
+
+app.scripts.config.serve_locally = True
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, processes=5)
